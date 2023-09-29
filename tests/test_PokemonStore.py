@@ -17,4 +17,4 @@ def test_can_add_Pokemons_to_Pokemon_Store():
     actual = pokemon_store.pokemons
     expected = [pikachu]
 
-    actual == expected
+    assert actual == expected
