@@ -1,4 +1,4 @@
-from lib.bag import *
+from bag import *
 
 class Pokemon():
     def __init__(self, name, bag = Bag()) -> None:
@@ -6,4 +6,10 @@ class Pokemon():
         self.bag = bag
 
     def add_food(self, food):
-        self.bag.space.append(food)
+        self.bag.add_to_space(food)
+
+
+pokemon = Pokemon('Venusaur')
+pokemon.add_food('Rocks')
+
+food_space = pokemon.bag.space
